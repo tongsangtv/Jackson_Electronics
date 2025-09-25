@@ -16,8 +16,7 @@
         padding-bottom: 10px;
       }
       td {
-        padding: 6px 8px;
-        vertical-align: middle;
+        vertical-align: left;
       }
       input[type="text"],
       select {
@@ -35,13 +34,6 @@
         border-top: 1px solid #888;
         margin: 15px 0;
       }
-      .btn-row {
-        text-align: center;
-        padding-top: 10px;
-      }
-      .checkbox-group {
-        padding-bottom: 5px;
-      }
     </style>
     <title>Jackson Electronics</title>
   </head>
@@ -53,7 +45,7 @@
     />
     <h2 style="text-align: center">Registration Form</h2>
     <form>
-      <table style="width: 100%; margin-left: auto; margin-right: auto">
+      <table style="width: 100%; margin-left: 25px; margin-right: auto">
         <thead>
           <caption>
             Register your Jackson Electronics product here
@@ -62,29 +54,30 @@
         <tbody>
           <tr>
             <td>First Name:</td>
-            <td><input type="text" name="firstName" style="width: 100px" /></td>
-            <td>Last Name:</td>
-            <td><input type="text" name="lastName" style="width: 100px" /></td>
+            <td>
+              <input type="text" name="firstName" style="width: 100px" /> Last
+              Name: <input type="text" name="lastName" style="width: 100px" />
+            </td>
           </tr>
           <tr>
             <td>Address #1:</td>
             <td colspan="3">
-              <input type="text" name="address1" style="width: 66%" />
+              <input type="text" name="address1" style="width: 50%" />
             </td>
           </tr>
           <tr>
             <td>Address #2:</td>
             <td colspan="3">
-              <input type="text" name="address2" style="width: 66%" />
+              <input type="text" name="address2" style="width: 50%" />
             </td>
           </tr>
           <tr>
             <td>City:</td>
-            <td><input type="text" name="city" /></td>
-            <td>State:</td>
-            <td><input type="text" name="state" style="width: 60px" /></td>
-            <td>Zip:</td>
-            <td><input type="text" name="zip" style="width: 80px" /></td>
+            <td>
+              <input type="text" name="city" /> State:
+              <input type="text" name="state" style="width: 35px" /> Zip:
+              <input type="text" name="zip" style="width: 60px" />
+            </td>
           </tr>
           <tr>
             <td>Country:</td>
@@ -116,10 +109,8 @@
           </tr>
           <tr>
             <td>Used for:</td>
-            <td class="checkbox-group">
-              <input type="radio" name="usage" value="Home" /> Home
-            </td>
-            <td class="checkbox-group">
+            <td><input type="radio" name="usage" value="Home" /> Home</td>
+            <td>
               <input
                 type="radio"
                 name="usage"
@@ -130,35 +121,31 @@
           </tr>
           <tr>
             <td></td>
-            <td class="checkbox-group">
+            <td>
               <input type="radio" name="usage" value="Business" /> Business
             </td>
             <td><input type="radio" name="usage" value="Other" /> Other</td>
           </tr>
           <tr>
             <td></td>
-            <td class="checkbox-group">
+            <td>
               <input type="radio" name="usage" value="Government" /> Government
             </td>
           </tr>
           <tr>
             <td>System (check all that apply):</td>
-            <td class="checkbox-group">
+            <td>
               <input type="checkbox" name="system" value="Windows" /> Windows
             </td>
-            <td class="checkbox-group">
-              <input type="checkbox" name="system" value="UNIX" /> UNIX
-            </td>
+            <td><input type="checkbox" name="system" value="UNIX" /> UNIX</td>
           </tr>
           <tr>
             <td></td>
-            <td class="checkbox-group">
+            <td>
               <input type="checkbox" name="system" value="Macintosh" />
               Macintosh
             </td>
-            <td class="checkbox-group">
-              <input type="checkbox" name="system" value="Other" /> Other
-            </td>
+            <td><input type="checkbox" name="system" value="Other" /> Other</td>
           </tr>
           <tr>
             <td colspan="6"><hr /></td>
@@ -172,7 +159,7 @@
         </tbody>
         <tfoot>
           <tr>
-            <td colspan="6" class="btn-row">
+            <td colspan="6" style="text-align: center">
               <input type="submit" value="Click to register" />
               <input type="reset" value="Click to cancel" />
             </td>

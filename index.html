@@ -45,7 +45,7 @@
     />
     <h2 style="text-align: center">Registration Form</h2>
     <form>
-      <table style="width: 100%; margin-left: 25px; margin-right: auto">
+      <table align="center">
         <thead>
           <caption>
             Register your Jackson Electronics product here
@@ -55,8 +55,9 @@
           <tr>
             <td>First Name:</td>
             <td>
-              <input type="text" name="firstName" style="width: 100px" /> Last
-              Name: <input type="text" name="lastName" style="width: 100px" />
+              <input type="text" name="firstName" style="width: 100px" />
+              <label>Last Name:</label>
+              <input type="text" name="lastName" style="width: 100px" />
             </td>
           </tr>
           <tr>
@@ -109,22 +110,29 @@
           </tr>
           <tr>
             <td>Used for:</td>
-            <td><input type="radio" name="usage" value="Home" /> Home</td>
             <td>
+              <input type="radio" name="usage" value="Home" /> Home
               <input
                 type="radio"
                 name="usage"
                 value="Educational Institution"
+                style="margin-left: 25%"
               />
-              Educational Institution
+              <label>Educational Institution</label>
             </td>
           </tr>
           <tr>
             <td></td>
             <td>
               <input type="radio" name="usage" value="Business" /> Business
+              <input
+                type="radio"
+                name="usage"
+                value="Other"
+                style="margin-left: 19%"
+              />
+              <label>Other</label>
             </td>
-            <td><input type="radio" name="usage" value="Other" /> Other</td>
           </tr>
           <tr>
             <td></td>
@@ -136,16 +144,28 @@
             <td>System (check all that apply):</td>
             <td>
               <input type="checkbox" name="system" value="Windows" /> Windows
+              <input
+                type="checkbox"
+                name="system"
+                value="UNIX"
+                style="margin-left: 19%"
+              />
+              <label>UNIX</label>
             </td>
-            <td><input type="checkbox" name="system" value="UNIX" /> UNIX</td>
           </tr>
           <tr>
             <td></td>
             <td>
               <input type="checkbox" name="system" value="Macintosh" />
               Macintosh
+              <input
+                type="checkbox"
+                name="system"
+                value="Other"
+                style="margin-left: 17%"
+              />
+              <label>Other</label>
             </td>
-            <td><input type="checkbox" name="system" value="Other" /> Other</td>
           </tr>
           <tr>
             <td colspan="6"><hr /></td>

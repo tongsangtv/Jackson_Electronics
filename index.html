@@ -7,7 +7,7 @@
       div {
         display: block;
         margin: auto;
-        width: 1000px;
+        width: 900px;
       }
       table {
         margin: 30px auto 0 auto;
@@ -107,22 +107,22 @@
               <td>
                 <select style="width: 120px" name="product">
                   <option>ScanMaster</option>
-                  <option>PrinterPro</option>
-                  <option>AudioX</option>
+                  <option>Printer</option>
+                  <option>Keyboard</option>
                   <option>Other</option>
                 </select>
               </td>
             </tr>
             <tr>
               <td>Date Purchased:</td>
-              <td><input type="date" name="datePurchased" /></td>
+              <td><input type="text" name="datePurchased" /></td>
             </tr>
             <tr>
               <td>Serial #:</td>
               <td><input type="text" name="serial" /></td>
             </tr>
             <tr>
-              <td rowspan="3">Used for:</td>
+              <td rowspan="3" style="vertical-align: top">Used for:</td>
               <td>
                 <input type="radio" name="usage" value="Home" />
                 Home
@@ -153,7 +153,9 @@
               </td>
             </tr>
             <tr>
-              <td rowspan="2">System (check all that apply):</td>
+              <td rowspan="2" style="vertical-align: top">
+                System (check all that apply):
+              </td>
               <td>
                 <input type="checkbox" name="system" value="Windows" />
                 Windows
@@ -177,7 +179,7 @@
               <td colspan="6"><hr /></td>
             </tr>
             <tr>
-              <td>Comments?:</td>
+              <td style="vertical-align: top">Comments?:</td>
               <td colspan="5">
                 <textarea name="comments"></textarea>
               </td>
